@@ -1,5 +1,5 @@
 openai
-streamlit as st
+streamlit
 gTTS 
 BytesIO 
 base64
