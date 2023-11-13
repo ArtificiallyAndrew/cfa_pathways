@@ -104,7 +104,7 @@ if selected_category:
 #
 ##docs = text_splitter.split_documents(pages)
 
-openai.api_key = st.secrets["OPENAI_API_KEY"]
+os.environ['OPENAI_API_KEY'] = st.secrets["OPENAI_API_KEY"]
 pinecone.init(
         api_key="6d28a0ef-2313-4d82-8fdd-a772d654856a",  # find at app.pinecone.io
         environment="asia-southeast1-gcp-free"  # next to api key in console
