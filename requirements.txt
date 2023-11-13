@@ -6,6 +6,6 @@ langchain
 datetime
 pinecone-client
 Path
-
+tiktoken 
 
 
