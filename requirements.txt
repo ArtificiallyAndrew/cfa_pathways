@@ -1,7 +1,6 @@
 openai
 streamlit
 gTTS 
-BytesIO 
 base64
 os
 shutil
