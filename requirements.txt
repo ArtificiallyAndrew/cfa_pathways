@@ -1,7 +1,6 @@
 openai
 streamlit
 gTTS 
-os
 shutil
 tempfile
 uuid
