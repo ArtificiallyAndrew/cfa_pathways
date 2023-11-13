@@ -4,8 +4,7 @@ gTTS
 uuid
 langchain
 datetime
-OpenAIEmbeddings
-Pinecone
+pinecone
 Path
 
 
