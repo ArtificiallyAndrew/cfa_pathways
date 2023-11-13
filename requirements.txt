@@ -1,11 +1,8 @@
 openai
 streamlit
 gTTS 
-shutil
-tempfile
 uuid
 langchain
-time
 datetime
 OpenAIEmbeddings
 Pinecone
