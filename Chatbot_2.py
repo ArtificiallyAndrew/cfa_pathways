@@ -19,7 +19,6 @@ from langchain.document_loaders import PyPDFLoader
 from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.vectorstores import Pinecone
 from pathlib import Path
-from aidata import AIDATA
 import pinecone 
 
 
