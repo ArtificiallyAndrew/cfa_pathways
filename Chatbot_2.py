@@ -93,30 +93,30 @@ if selected_category:
         st.markdown(f"[{program_name}]({program_url})")
 
 
-loader = PyPDFLoader("cfa_pathways/PathwaysTraining.pdf") 
-pages = loader.load_and_split()
+#loader = PyPDFLoader("cfa_pathways/PathwaysTraining.pdf") 
+#pages = loader.load_and_split()
 #
-text_splitter = RecursiveCharacterTextSplitter(
-    chunk_size = 700,
-    chunk_overlap  = 150,
-    length_function = len,
-)
+#text_splitter = RecursiveCharacterTextSplitter(
+#    chunk_size = 700,
+#    chunk_overlap  = 150,
+#    length_function = len,
+#)
 #
-docs = text_splitter.split_documents(pages)
+#docs = text_splitter.split_documents(pages)
 
 os.environ['OPENAI_API_KEY'] = st.secrets["OPENAI_API_KEY"]
 pinecone.init(
         api_key="6d28a0ef-2313-4d82-8fdd-a772d654856a",  # find at app.pinecone.io
-        environment="asia-southeast1-gcp-free"  # next to api key in console
+        environment="gcp-starter"  # next to api key in console
 )
 embeddings = OpenAIEmbeddings(openai_api_key=openai.api_key)
 index_name = "pathways"
-#docsearch = Pinecone.from_existing_index(index_name, embeddings)
-docsearch = Pinecone.from_documents(docs, embeddings, index_name=index_name)
+docsearch = Pinecone.from_existing_index(index_name, embeddings)
+#docsearch = Pinecone.from_documents(docs, embeddings, index_name=index_name)
 llm = ChatOpenAI(model_name="gpt-4-1106-preview", temperature=.1, streaming=True)
 memory = ConversationBufferMemory(memory_key="chat_history", return_messages=True)
 template = (
-            "As an AI assistant, your primary function is to provide accurate and concise answers to user"
+            "You are an AI assistant, your primary function is to provide accurate and concise answers to user"
             "queries, leveraging the data available in a specified database. For each response, ensure you"
             "include the most relevant website link from the {categories[selected_category].items()} to support your answer. In instances "
             "where the database does not contain the necessary information to address a user's request, " 
