@@ -4,7 +4,7 @@ gTTS
 uuid
 langchain
 datetime
-pinecone==0.5.2
+pinecone==2.2.4
 Path
 tiktoken 
 
