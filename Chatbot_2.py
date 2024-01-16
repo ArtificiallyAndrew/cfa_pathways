@@ -93,7 +93,7 @@ if selected_category:
         st.markdown(f"[{program_name}]({program_url})")
 
 
-loader = PyPDFLoader("PathwaysTraining.pdf") 
+loader = PyPDFLoader("cfa_pathways/PathwaysTraining.pdf") 
 pages = loader.load_and_split()
 #
 text_splitter = RecursiveCharacterTextSplitter(
