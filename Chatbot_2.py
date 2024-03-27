@@ -25,14 +25,15 @@ import pinecone
 
 
 image_path = "PathwaysLogo.png"
-st.image(image_path,  width=200)
+st.image(image_path,  width=100)
+st.title("Welcome to the Pathways Navigator")
 st.markdown("""
     <style>
     .small-font {
         font-size:18px;  /* Adjust the size as needed */
     }
     </style>
-    <p class="small-font">Sharing NYU's work to create pathways helping increase opportunities for underrepresented people to pursue the college and career aspirations they set for themselves.</p>
+    <p class="small-font">At the heart of a brighter future is finding the right educational path. The Pathways Navigator created by the Center for Faculty Advancement, connects individuals with diverse academic and professional programs. </p>
     """, unsafe_allow_html=True)
 
 categories = {
