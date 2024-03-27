@@ -26,7 +26,7 @@ import pinecone
 
 image_path = "PathwaysLogo.png"
 website_url = "https://pathways.facultyadvance.org/"
-st.image(image_path,  width=100)
+st.image(image_path,  width=200)
 st.title("Welcome to the Pathways Navigator")
 st.markdown("""
     <style>
