@@ -31,7 +31,7 @@ image = st.image(image_path,  width=100)
 
 button_html = f'''
     <a href="{website_url}" target="_blank" style="display: inline-block;">
-        <img src="{image_path}" alt="button image" style="width: 100px; height: auto;">
+        <img src="{"https://www.google.com/url?sa=i&url=https%3A%2F%2Fpathways.facultyadvance.org%2F&psig=AOvVaw0JQfBgipHwIhp_zlO10AYc&ust=1711639640228000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMi2stfglIUDFQAAAAAdAAAAABAF"}" alt="button image" style="width: 100px; height: auto;">
     </a>
 '''
 # Display the button
