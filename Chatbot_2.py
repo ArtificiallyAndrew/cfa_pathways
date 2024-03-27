@@ -26,11 +26,8 @@ import pinecone
 
 image_path = "PathwaysLogo.png"
 website_url = "https://pathways.facultyadvance.org/"
-st.image(image_path,  width=100)
-image_path = "PathwaysLogo.png"
-website_url = "https://pathways.facultyadvance.org/"
-st.markdown(f'[![Image](/{image_path})]({website_url})', unsafe_allow_html=True)
-st.markdown(f'<a href="{website_url}" target="_blank"><img src="{image_path}" width="100"></a>', unsafe_allow_html=True)
+image = st.image(image_path,  width=100)
+image.markdown(f'[![Image]({image_path})]({website_url})', unsafe_allow_html=True)
 
 st.title("Welcome to the Pathways Navigator")
 st.markdown("""
